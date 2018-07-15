@@ -9,18 +9,18 @@ Version:	0.1.8
 Release:	1
 License:	MPL v2.0
 Group:		Libraries
-Source0:	http://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
+Source0:	https://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
 # Source0-md5:	cc902d50a71637a7f3e296e7d27589a7
-URL:		http://www.freedesktop.org/wiki/Software/libetonyek/
+URL:		https://wiki.documentfoundation.org/DLP/Libraries/libetonyek
 BuildRequires:	GLM
 BuildRequires:	boost-devel
 BuildRequires:	doxygen
 BuildRequires:	gperf
 BuildRequires:	liblangtag-devel
 BuildRequires:	librevenge-devel >= 0.0
-BuildRequires:	libstdc++-devel
+BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libxml2-devel >= 2.0
-BuildRequires:	mdds-devel >= 1.0
+BuildRequires:	mdds-devel >= 1.2
 BuildRequires:	pkgconfig >= 1:0.20
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -47,7 +47,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libetonyek
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	librevenge-devel >= 0.0
-Requires:	libstdc++-devel
+Requires:	libstdc++-devel >= 6:4.7
 Requires:	libxml2-devel >= 2.0
 Requires:	zlib-devel
 
