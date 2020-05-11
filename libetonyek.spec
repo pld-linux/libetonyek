@@ -20,7 +20,7 @@ BuildRequires:	liblangtag-devel
 BuildRequires:	librevenge-devel >= 0.0
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libxml2-devel >= 2.0
-BuildRequires:	mdds-devel >= 1.2
+BuildRequires:	mdds-devel >= 1.5
 BuildRequires:	pkgconfig >= 1:0.20
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -103,7 +103,8 @@ formatów. Aktualnie obsługiwane są XHTML i format surowy.
 %build
 %configure \
 	--disable-silent-rules \
-	%{?with_static_libs:--enable-static}
+	%{?with_static_libs:--enable-static} \
+	--with-mdds=1.5
 
 %{__make}
 
