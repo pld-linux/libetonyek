@@ -5,12 +5,12 @@
 Summary:	Library and tools for reading and converting Apple Keynote presentations
 Summary(pl.UTF-8):	Biblioteka i narzędzia do odczytu i konwersji prezentacji Apple Keynote
 Name:		libetonyek
-Version:	0.1.9
+Version:	0.1.10
 Release:	1
 License:	MPL v2.0
 Group:		Libraries
 Source0:	https://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
-# Source0-md5:	b891c14c5233f93fb7db052b5762a692
+# Source0-md5:	c29792ef7d4cb98463e3c3ec3e56ace6
 URL:		https://wiki.documentfoundation.org/DLP/Libraries/libetonyek
 BuildRequires:	GLM
 BuildRequires:	boost-devel
@@ -22,6 +22,7 @@ BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	mdds-devel >= 1.5
 BuildRequires:	pkgconfig >= 1:0.20
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	zlib-devel
