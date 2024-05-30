@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	static_libs	# don't build static libraries
+%bcond_without	static_libs	# static library
 
 Summary:	Library and tools for reading and converting Apple Keynote presentations
 Summary(pl.UTF-8):	Biblioteka i narzędzia do odczytu i konwersji prezentacji Apple Keynote
@@ -12,7 +12,7 @@ Group:		Libraries
 Source0:	https://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
 # Source0-md5:	c29792ef7d4cb98463e3c3ec3e56ace6
 URL:		https://wiki.documentfoundation.org/DLP/Libraries/libetonyek
-BuildRequires:	GLM
+BuildRequires:	GLM-devel
 BuildRequires:	boost-devel
 BuildRequires:	doxygen
 BuildRequires:	gperf
