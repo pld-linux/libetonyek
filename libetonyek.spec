@@ -5,12 +5,12 @@
 Summary:	Library and tools for reading and converting Apple Keynote presentations
 Summary(pl.UTF-8):	Biblioteka i narzędzia do odczytu i konwersji prezentacji Apple Keynote
 Name:		libetonyek
-Version:	0.1.10
+Version:	0.1.11
 Release:	1
 License:	MPL v2.0
 Group:		Libraries
 Source0:	https://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
-# Source0-md5:	c29792ef7d4cb98463e3c3ec3e56ace6
+# Source0-md5:	23eeb71873002db8e0e878a5a546a4ff
 URL:		https://wiki.documentfoundation.org/DLP/Libraries/libetonyek
 BuildRequires:	GLM-devel
 BuildRequires:	boost-devel
@@ -20,7 +20,7 @@ BuildRequires:	liblangtag-devel
 BuildRequires:	librevenge-devel >= 0.0
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	libxml2-devel >= 2.0
-BuildRequires:	mdds-devel >= 2.0
+BuildRequires:	mdds-devel >= 2.1
 BuildRequires:	pkgconfig >= 1:0.20
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	tar >= 1:1.22
@@ -102,8 +102,7 @@ formatów. Aktualnie obsługiwane są XHTML i format surowy.
 %build
 %configure \
 	--disable-silent-rules \
-	%{?with_static_libs:--enable-static} \
-	--with-mdds=2.0
+	%{?with_static_libs:--enable-static}
 
 %{__make}
 
@@ -126,7 +125,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog FEATURES NEWS README TODO
+%doc AUTHORS ChangeLog FEATURES.md NEWS README.md TODO
 %attr(755,root,root) %{_libdir}/libetonyek-0.1.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libetonyek-0.1.so.1
 
