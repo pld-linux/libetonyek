@@ -6,7 +6,7 @@ Summary:	Library and tools for reading and converting Apple Keynote presentation
 Summary(pl.UTF-8):	Biblioteka i narzędzia do odczytu i konwersji prezentacji Apple Keynote
 Name:		libetonyek
 Version:	0.1.12
-Release:	1
+Release:	2
 License:	MPL v2.0
 Group:		Libraries
 Source0:	https://dev-www.libreoffice.org/src/libetonyek/%{name}-%{version}.tar.xz
